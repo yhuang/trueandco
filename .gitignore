@@ -1,1 +1,2 @@
-bra_size_adjuster.rb
+# Ignore Rubymine system files
+.idea/
