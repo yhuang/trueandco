@@ -4,11 +4,11 @@ class Size
   end
 
   def up
-    @size_index < @values.length - 1 ? @size_index += 1 : nil
+    @size_index < @values.length - 1 ? @size_index += 1 : raise(RangeError, 'Size is out of range')
   end
 
   def down
-    @size_index > 0 ? @size_index -= 1 : nil
+    @size_index > 0 ? @size_index -= 1 : raise(RangeError, 'Size is out of range')
   end
 
   def to_s
